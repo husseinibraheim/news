@@ -1,0 +1,70 @@
+2024-03-30T11:19:45.648Z [winston custom format] info: User created successfully
+2024-03-30T11:37:52.744Z [winston custom format] error: http | POST| 5000 | body :  {"email":"hussein@gmail.com","password":"12345@H"} |/api/v1/users/login |secretOrPrivateKey must have a value
+2024-03-30T11:37:52.744Z [winston custom format] error: secretOrPrivateKey must have a value
+2024-03-30T11:39:44.431Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T11:41:31.651Z [winston custom format] error: End point not found
+2024-03-30T11:41:35.702Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T12:02:29.812Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T12:03:47.808Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:08:37.990Z [winston custom format] error: End point not found
+2024-03-30T18:08:38.015Z [winston custom format] error: End point not found
+2024-03-30T18:08:42.997Z [winston custom format] error: End point not found
+2024-03-30T18:08:43.014Z [winston custom format] error: End point not found
+2024-03-30T18:08:51.994Z [winston custom format] error: End point not found
+2024-03-30T18:08:52.015Z [winston custom format] error: End point not found
+2024-03-30T18:09:09.023Z [winston custom format] error: End point not found
+2024-03-30T18:09:09.040Z [winston custom format] error: End point not found
+2024-03-30T18:09:33.867Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:09:42.000Z [winston custom format] error: End point not found
+2024-03-30T18:09:42.014Z [winston custom format] error: End point not found
+2024-03-30T18:10:31.179Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |invalid token
+2024-03-30T18:10:31.181Z [winston custom format] error: invalid token
+2024-03-30T18:10:46.989Z [winston custom format] error: End point not found
+2024-03-30T18:10:47.007Z [winston custom format] error: End point not found
+2024-03-30T18:10:58.809Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |invalid token
+2024-03-30T18:10:58.810Z [winston custom format] error: invalid token
+2024-03-30T18:11:10.520Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |invalid token
+2024-03-30T18:11:10.521Z [winston custom format] error: invalid token
+2024-03-30T18:12:36.736Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:12:36.738Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:12:41.762Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:12:56.009Z [winston custom format] error: End point not found
+2024-03-30T18:12:56.022Z [winston custom format] error: End point not found
+2024-03-30T18:13:38.802Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:13:49.085Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:13:49.085Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:14:15.560Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:14:15.561Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:14:51.902Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:14:51.904Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:15:14.151Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:15:14.153Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:15:23.980Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:15:23.983Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:17:13.006Z [winston custom format] error: End point not found
+2024-03-30T18:17:13.022Z [winston custom format] error: End point not found
+2024-03-30T18:18:53.501Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:18:53.503Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:20:00.766Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:20:00.768Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:24:03.301Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:24:03.305Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:25:18.894Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:25:18.896Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:25:45.986Z [winston custom format] error: End point not found
+2024-03-30T18:25:46.007Z [winston custom format] error: End point not found
+2024-03-30T18:26:01.676Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:26:01.678Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:29:19.571Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:31:45.717Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:31:45.718Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:31:53.282Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:33:10.845Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:34:02.762Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:34:13.024Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:35:16.244Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:35:42.677Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:37:01.021Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
+2024-03-30T18:37:01.022Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-30T18:37:06.839Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-30T18:37:13.346Z [winston custom format] info: you logged out successfully
