@@ -68,3 +68,43 @@
 2024-03-30T18:37:01.022Z [winston custom format] error: This Session is not Valid. Please Login again
 2024-03-30T18:37:06.839Z [winston custom format] info: Welcome Hussein, you logged in successfully
 2024-03-30T18:37:13.346Z [winston custom format] info: you logged out successfully
+2024-03-31T22:12:29.388Z [winston custom format] info: User created successfully
+2024-03-31T22:12:33.730Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-31T22:12:39.657Z [winston custom format] info: you logged out successfully
+2024-03-31T22:21:39.272Z [winston custom format] error: http | POST| 5000 | body :  {"firstName":"Hussein123","lastName":"ibraheim123","email":"hussein123@gmail.com","password":"12345@Hh"} |/api/v1/users/ |(0 , validation_1.validateUser) is not a function
+2024-03-31T22:21:39.274Z [winston custom format] error: (0 , validation_1.validateUser) is not a function
+2024-03-31T22:21:42.756Z [winston custom format] error: http | POST| 5000 | body :  {"firstName":"Hussein123","lastName":"ibraheim123","email":"hussein123@gmail.com","password":"12345@Hh"} |/api/v1/users/ |(0 , validation_1.validateUser) is not a function
+2024-03-31T22:21:42.756Z [winston custom format] error: (0 , validation_1.validateUser) is not a function
+2024-03-31T22:22:30.963Z [winston custom format] info: User created successfully
+2024-03-31T22:22:34.132Z [winston custom format] error: http | POST| 5000 | body :  {"firstName":"Hussein123","lastName":"ibraheim123","email":"hussein123@gmail.com","password":"12345@Hh"} |/api/v1/users/ |E11000 duplicate key error collection: news.users index: email_1 dup key: { email: "hussein123@gmail.com" }
+2024-03-31T22:22:34.133Z [winston custom format] error: E11000 duplicate key error collection: news.users index: email_1 dup key: { email: "hussein123@gmail.com" }
+2024-03-31T23:10:35.921Z [winston custom format] error: http | POST| 5000 | body :  {"category":"business","language":"ar","country":"ae"} |/api/v1/subscription |This Session is not Valid. Please Login again
+2024-03-31T23:10:35.923Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-31T23:10:40.230Z [winston custom format] info: Welcome Hussein, you logged in successfully
+2024-03-31T23:10:49.779Z [winston custom format] info: you subscribed business category in ae in ar langauge
+2024-03-31T23:11:09.436Z [winston custom format] info: you subscribed entertainment category in ae in ar langauge
+2024-03-31T23:11:14.859Z [winston custom format] info: you subscribed entertainment category in ae in en langauge
+2024-03-31T23:14:13.572Z [winston custom format] info: Subscriptions retrieved successfully
+2024-03-31T23:18:03.819Z [winston custom format] error: End point not found
+2024-03-31T23:18:19.123Z [winston custom format] info: you are unsubscribe entertainment category  successfully
+2024-03-31T23:18:23.230Z [winston custom format] info: Subscriptions retrieved successfully
+2024-03-31T23:26:50.362Z [winston custom format] info: Posts retrieved successfully
+2024-03-31T23:34:35.931Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:35:24.503Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:36:43.623Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:37:16.293Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:38:45.074Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:40:00.513Z [winston custom format] info: you subscribed entertainment category in us in en langauge
+2024-03-31T23:40:11.346Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:41:18.915Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:41:34.617Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:43:12.134Z [winston custom format] info: Subscriptions retrieved successfully
+2024-03-31T23:43:34.470Z [winston custom format] info: you are unsubscribe entertainment category  successfully
+2024-03-31T23:43:40.905Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:44:14.407Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:44:32.221Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:45:10.450Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:45:59.965Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:46:07.613Z [winston custom format] info: news retrieved successfully
+2024-03-31T23:47:07.055Z [winston custom format] info: news retrieved successfully
+2024-04-01T00:04:02.222Z [winston custom format] info: news retrieved successfully

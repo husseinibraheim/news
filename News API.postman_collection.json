@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "db67b582-4234-4ca3-b98f-43919b0529ae",
+		"name": "News API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23532256",
+		"_collection_link": "https://lunar-escape-526952.postman.co/workspace/ToDo-app~8e4f7131-3888-4267-8c3f-02db643295f7/collection/23532256-db67b582-4234-4ca3-b98f-43919b0529ae?action=share&source=collection_link&creator=23532256"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n\n      \"firstName\": \"Hussein123\",\n  \"lastName\": \"ibraheim123\",\n  \"email\":\"hussein123@gmail.com\",\n  \"password\": \"12345@Hh\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\" : \"hussein@gmail.com\",\n    \"password\" : \"12345@H\"\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/login/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"login",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA3ZjU1MTIyZWQwNjVhZjczZjM5NzkiLCJuYW1lIjoiSHVzc2VpbiIsImVtYWlsIjoiaHVzc2VpbkBnbWFpbC5jb20iLCJzZXNzaW9uSWQiOiIwZTVjYmFjNy00YTYwLTQ3MTgtYTY0OS0zOWMwNjkwYTMxY2UiLCJpYXQiOjE3MTE5MjMxNTMsImV4cCI6MTcxMjAwOTU1M30.0sjE9MkGQ7rE3mKz1dWaYe0fLH1JiWlgmuIJpbA6mH0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/users/logout/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"logout",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "NewsApi",
+					"item": [
+						{
+							"name": "newsApi",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey=57ae5b6392cb47cdbaa29d550ffdbd76&category=entertainment",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"top-headlines",
+										"sources"
+									],
+									"query": [
+										{
+											"key": "apiKey",
+											"value": "57ae5b6392cb47cdbaa29d550ffdbd76"
+										},
+										{
+											"key": "category",
+											"value": "entertainment"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "subscription",
+					"item": [
+						{
+							"name": "subscribe",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA3ZjU1MTIyZWQwNjVhZjczZjM5NzkiLCJuYW1lIjoiSHVzc2VpbiIsImVtYWlsIjoiaHVzc2VpbkBnbWFpbC5jb20iLCJzZXNzaW9uSWQiOiJmMzZjODFjNi1iN2FhLTQ1MjEtOTkxOS1iOWQ5Nzc2NDkxYmMiLCJpYXQiOjE3MTE5MjY2NDAsImV4cCI6MTcxMjAxMzA0MH0.VG52b1KQonCAOpS9zn33naZbHO92d0nhP0DZ0vbGkDg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"category\": \"entertainment\",\n        \"language\": \"en\",\n        \"country\":\"us\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/subscription",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"subscription"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "list subscriptions",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA3ZjU1MTIyZWQwNjVhZjczZjM5NzkiLCJuYW1lIjoiSHVzc2VpbiIsImVtYWlsIjoiaHVzc2VpbkBnbWFpbC5jb20iLCJzZXNzaW9uSWQiOiJmMzZjODFjNi1iN2FhLTQ1MjEtOTkxOS1iOWQ5Nzc2NDkxYmMiLCJpYXQiOjE3MTE5MjY2NDAsImV4cCI6MTcxMjAxMzA0MH0.VG52b1KQonCAOpS9zn33naZbHO92d0nhP0DZ0vbGkDg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"category\": \"entertainment\",\n        \"language\": \"en\",\n        \"country\":\"ae\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/subscription",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"subscription"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "unsubscribe",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA3ZjU1MTIyZWQwNjVhZjczZjM5NzkiLCJuYW1lIjoiSHVzc2VpbiIsImVtYWlsIjoiaHVzc2VpbkBnbWFpbC5jb20iLCJzZXNzaW9uSWQiOiJmMzZjODFjNi1iN2FhLTQ1MjEtOTkxOS1iOWQ5Nzc2NDkxYmMiLCJpYXQiOjE3MTE5MjY2NDAsImV4cCI6MTcxMjAxMzA0MH0.VG52b1KQonCAOpS9zn33naZbHO92d0nhP0DZ0vbGkDg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n      \"category\": \"entertainment\",\n        \"language\": \"en\",\n        \"country\":\"ae\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/subscription/6609ed8d3482e8819243f738",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"subscription",
+										"6609ed8d3482e8819243f738"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "news",
+					"item": [
+						{
+							"name": "all news",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA3ZjU1MTIyZWQwNjVhZjczZjM5NzkiLCJuYW1lIjoiSHVzc2VpbiIsImVtYWlsIjoiaHVzc2VpbkBnbWFpbC5jb20iLCJzZXNzaW9uSWQiOiJmMzZjODFjNi1iN2FhLTQ1MjEtOTkxOS1iOWQ5Nzc2NDkxYmMiLCJpYXQiOjE3MTE5MjY2NDAsImV4cCI6MTcxMjAxMzA0MH0.VG52b1KQonCAOpS9zn33naZbHO92d0nhP0DZ0vbGkDg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/news",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"news"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscribe news",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA3ZjU1MTIyZWQwNjVhZjczZjM5NzkiLCJuYW1lIjoiSHVzc2VpbiIsImVtYWlsIjoiaHVzc2VpbkBnbWFpbC5jb20iLCJzZXNzaW9uSWQiOiJmMzZjODFjNi1iN2FhLTQ1MjEtOTkxOS1iOWQ5Nzc2NDkxYmMiLCJpYXQiOjE3MTE5MjY2NDAsImV4cCI6MTcxMjAxMzA0MH0.VG52b1KQonCAOpS9zn33naZbHO92d0nhP0DZ0vbGkDg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/news/subscribed",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"news",
+										"subscribed"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

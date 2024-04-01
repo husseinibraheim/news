@@ -1,22 +1,15 @@
-import Joi from "joi";
+import { Request, Response, NextFunction } from 'express';
+import Joi from 'joi';
 
-// implement user Interface
-interface Iuser {
-  firstName: string;
-  lastName: string;
-  email: string;
-  password: string;
-  roles?: [string];
+export function validate(schema: Joi.ObjectSchema<any>) {
+  return (req: Request, res: Response, next: NextFunction) => {
+    const { error, value } = schema.validate(req.body);
+    if (error) {
+      return res.status(400).json({ message: error.details[0].message });
+    }
+
+    req.body = value;
+    next();
+  };
 }
 
-//implement userSchema for Joi validation
-const userSchema = Joi.object<Iuser>({
-  firstName: Joi.string().min(3).max(15).required(),
-  lastName: Joi.string().min(3).max(15).required(),
-  email: Joi.string().email().required(),
-  password: Joi.string().min(5).required()
-});
-// Export to validate just to path req.body data to validateUser in Controller
-export const validateUser = (data: Iuser) => {
-  return userSchema.validate(data);
-};

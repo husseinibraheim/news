@@ -1,10 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 import userModel from "../models/user.model";
-import { ModelHelpers } from "../utils/modelHelpers";
 import { sendResponse } from "../utils/responseHandler";
 import APIError from "../utils/apiError";
-import { validateUser } from "../middlewares/validation/validation";
-import UserServices from "../services/user.services";
+import UserServices from "../services/servicesFactory.services";
 import bcrypt from "bcryptjs";
 import { CustomRequest } from "../middlewares/authorization/jwt.utils";
 import dotenv from "dotenv";
@@ -22,8 +20,7 @@ export const create = async (
   next: NextFunction
 ) => {
   try {
-    const { error } = validateUser(req.body);
-    if (error) throw new APIError(error.toString(), 409);
+
     const createUser = new userModel(req.body);
     const user = await userServices.create(createUser);
     sendResponse(res, "User created successfully", user, 200);
@@ -45,19 +42,6 @@ export const getAll = async (
   }
 };
 
-export const getOne = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    const { id } = req.params;
-    const user = await userServices.findOne(id);
-    sendResponse(res, "User retrieved successfully", user, 200);
-  } catch (err) {
-    next(new APIError(err.message, err.status));
-  }
-};
 
 export const updateUser = async (
   req: CustomRequest,
@@ -70,11 +54,6 @@ export const updateUser = async (
     const decoded = req.userId
     if (id !== decoded)
       throw new APIError("can't change other users data", 409);
-    // check if user wanted to change email to an exists email
-    // const existsUser = await userServices.findAll({ email: data.email });
-    // if (existsUser.length > 0)
-    // throw new APIError("this email is already exist", 409);
-    // update user data
     const updatedUser = await userServices.update(id, data);
     sendResponse(res, "User updated successfully", updatedUser, 200);
   } catch (err) {
@@ -108,7 +87,7 @@ export const login = async (
       sessionId: sessionId,
     });
     await newUserSession.save();
-    sendResponse(
+    return sendResponse(
       res,
       `Welcome ${user.firstName}, you logged in successfully`,
       user._id,

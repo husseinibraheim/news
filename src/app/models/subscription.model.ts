@@ -1,29 +1,27 @@
 import mongoose, { Schema } from "mongoose";
 
-const postSchema = new Schema(
+const subscriptionSchema = new Schema(
   {
     author: {
       type: Schema.Types.ObjectId,
       ref: "User",
       required: true,
     },
-    title: {
+    category: {
       type: String,
       required: true,
     },
-    body: {
+    language: {
       type: String,
       required: true,
     },
-    image: {
+    country: {
       type: String,
+      required: true,
     },
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );
 
-postSchema.virtual("imagePath").get(function () {
-  return "http://localhost:3000/" + this.image;
-});
-const Post = mongoose.model("Post", postSchema);
-export default Post;
+const Subscription = mongoose.model("Subscription", subscriptionSchema);
+export default Subscription;

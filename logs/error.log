@@ -51,3 +51,12 @@
 2024-03-30T18:31:45.718Z [winston custom format] error: This Session is not Valid. Please Login again
 2024-03-30T18:37:01.021Z [winston custom format] error: http | PATCH| 5000 | body :  {} |/api/v1/users/logout/ |This Session is not Valid. Please Login again
 2024-03-30T18:37:01.022Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-31T22:21:39.272Z [winston custom format] error: http | POST| 5000 | body :  {"firstName":"Hussein123","lastName":"ibraheim123","email":"hussein123@gmail.com","password":"12345@Hh"} |/api/v1/users/ |(0 , validation_1.validateUser) is not a function
+2024-03-31T22:21:39.274Z [winston custom format] error: (0 , validation_1.validateUser) is not a function
+2024-03-31T22:21:42.756Z [winston custom format] error: http | POST| 5000 | body :  {"firstName":"Hussein123","lastName":"ibraheim123","email":"hussein123@gmail.com","password":"12345@Hh"} |/api/v1/users/ |(0 , validation_1.validateUser) is not a function
+2024-03-31T22:21:42.756Z [winston custom format] error: (0 , validation_1.validateUser) is not a function
+2024-03-31T22:22:34.132Z [winston custom format] error: http | POST| 5000 | body :  {"firstName":"Hussein123","lastName":"ibraheim123","email":"hussein123@gmail.com","password":"12345@Hh"} |/api/v1/users/ |E11000 duplicate key error collection: news.users index: email_1 dup key: { email: "hussein123@gmail.com" }
+2024-03-31T22:22:34.133Z [winston custom format] error: E11000 duplicate key error collection: news.users index: email_1 dup key: { email: "hussein123@gmail.com" }
+2024-03-31T23:10:35.921Z [winston custom format] error: http | POST| 5000 | body :  {"category":"business","language":"ar","country":"ae"} |/api/v1/subscription |This Session is not Valid. Please Login again
+2024-03-31T23:10:35.923Z [winston custom format] error: This Session is not Valid. Please Login again
+2024-03-31T23:18:03.819Z [winston custom format] error: End point not found
